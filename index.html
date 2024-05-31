@@ -6,340 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project#3</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-     
+
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(31, 28, 28, 0.4);">
-        
-            <a class="navbar-brand text-uppercase" href="#">Travello</a>
-           
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                           Trips
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Turkey</a>
-                            <a class="dropdown-item" href="#">Spain</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Amesterdam</a>
-                            <a class="dropdown-item" href="#">Malaysia</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-1">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <button class="btn btn-outline-light ml-2" data-toggle="modal"
-                    data-target="#loginModal">Login</button>
-            </div>
-    </nav>
-
-    <!-- Side Social Media Icons -->
-    <div class="social-icons">
-        <a href="#" class="fab fa-facebook-f"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin-in"></a>
-        <a href="#" class="fab fa-twitter"></a>
-
-    </div>
-
-    <!-- Hero Section with Carousel -->
     <header>
-        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/bg-img3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Welcome to My Website</h1>
-                        <p class="lead">A simple, responsive website using Bootstrap</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/about2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Slide Two</h1>
-                        <p class="lead">Another example text for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/about3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1>Slide Three</h1>
-                        <p class="lead">And here is some text for the third slide.</p>
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top"
+            style="height: 50px; background-color: rgba(255, 255, 255,0.5);">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase" href="#">Travello</a>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                Trips
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Turkey</a>
+                                <a class="dropdown-item" href="#">Greece</a>
+                                <a class="dropdown-item" href="#">France</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Amesterdam</a>
+                                <a class="dropdown-item" href="#">Switzerland</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 shadow-none" type="search" placeholder="Search">
+                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                    <button class="btn btn-outline-dark ml-2 shadow-none" data-toggle="modal"
+                        data-target="#loginModal">Login</button>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
+        </nav>
     </header>
 
-    <!-- Welcome Section -->
-    <section class="py-5 text-center">
-        <div class="container">
-            <h2>Welcome to Our Website</h2>
-            <p class="lead">We are glad to have you here. Explore our features and services.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Popular Destinations Section -->
-
-    <!-- <div class="container"> -->
-    <!-- <center>
-            <h2>Bootstrap 4 Collapse Arrow Icons</h2>
-        </center> -->
-    <div class="accordion" id="accordionExample">
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
-                <span class="title">Collapsible Group Item #1 </span>
-                <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-            </div>
-            <div id="collapseOne" class="collapse" data-parent="#accordionExample">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                aria-controls="collapseTwo">
-                <span class="title">Collapsible Group Item #2</span>
-                <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-            </div>
-            <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
-                <span class="title">Collapsible Group Item #3</span>
-                <span class="accicon"><i class="fas fa-angle-down rotate-icon"></i></span>
-            </div>
-            <div id="collapseThree" class="collapse" data-parent="#accordionExample">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- </div> -->
-
-    <!-- Translation Section -->
-    <section>
-        <div class="py-5 bg-primary text-center">
-            <h2 class="text-white">Translation from Arabic to English</h2>
-            <div class="form-group">
-                <textarea class="form-control" id="translationTextarea" rows="3"
-                    placeholder="Enter text to translate"></textarea>
-            </div>
-            <button class="btn btn-secondary" onclick="copyText()">Copy Text</button>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Translation Section</h2>
-            <p class="lead">Translate from Arabic to Turkish</p>
-            <div class="form-group">
-                <textarea class="form-control" id="translationTextarea" rows="3"
-                    placeholder="Enter text to translate"></textarea>
-            </div>
-            <button class="btn btn-secondary" onclick="copyText()">Copy Text</button>
-        </div>
-    </section>
-    <div class="container">
-        <h2>Translation Section</h2>
-        <p class="lead">Translate from Arabic to Germany</p>
-        <div class="form-group">
-            <textarea class="form-control" id="translationTextarea" rows="3"
-                placeholder="Enter text to translate"></textarea>
-        </div>
-        <button class="btn btn-secondary" onclick="copyText()">Copy Text</button>
-    </div>
-    </section>
-
-    <!-- Background Image Section -->
-    <section class="fixed-bg"></section>
-
-    <!-- Cards Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center">Popular Places</h2>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="images/place1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Place 1</h5>
-                            <p class="card-text">Description of Place 1.</p>
-                            <a href="#" class="btn btn-primary">Know More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="card">
-                        <img src="images/place1.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Place 1</h5>
-                            <p class="card-text">Description of Place 1.</p>
-                            <a href="#" class="btn btn-primary">Know More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other cards... -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Background Image Section -->
-    <section class="bg-image fixed-bg">
-        <div class="container py-5 text-white text-center">
-            <h2>Another Fixed Background Section</h2>
-            <p class="lead">This section has a fixed background image.</p>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>All Thanks and Appreciation</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="team-member">
-                        <div class="team-image" style="background-image: url('https://via.placeholder.com/300');"></div>
-                        <h3>Member 1</h3>
-                        <p class="text-muted">Career 1</p>
-                        <div class="team-circle" style="background-image: url('https://via.placeholder.com/100');">
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other team members... -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Recent News Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="text-center">Recent News</h2>
-            <div class="row">
-                <div class="col-lg-6 mb-4">
-                    <div class="podcast">
-                        <img src="images/about1.jpg" class="float-left mr-3" alt="...">
-                        <p class="lead">Description of podcast 1.</p>
-                        <div class="btn-group">
-                            <button class="btn btn-secondary"><i class="fas fa-podcast"></i> Podcast</button>
-                            <button class="btn btn-secondary"><i class="far fa-clock"></i> Duration</button>
-                            <button class="btn btn-secondary"><i class="fas fa-play"></i> Play</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other news items... -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Join Us Section -->
-    <section class="py-5 text-center bg-light">
-        <div class="container">
-            <h2>Join Us</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <a href="#" class="fab fa-facebook-f fa-3x"></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="fab fa-twitter fa-3x"></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="fab fa-instagram fa-3x"></a>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="fab fa-linkedin-in fa-3x"></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="bg-light py-4">
-        <div class="container">
-            <div class="row">
-                <!-- Company Information Section -->
-                <div class="col-md-4">
-                    <h5>Company Name</h5>
-                    <p>Telephone: (123) 456-7890</p>
-                    <p>Address: 1234 Street Name, City, State, Country</p>
-                    <p>Fax: (123) 456-7891</p>
-                </div>
-                <!-- Important Links Section -->
-                <div class="col-md-4">
-                    <h5>Important Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <!-- Vision Section -->
-                <div class="col-md-4">
-                    <h5>Our Vision</h5>
-                    <p>To be the leading company in our industry, providing top-quality services and innovative
-                        solutions to our clients.</p>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <p class="mb-0">&copy; 2024 My Website. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
     <!-- Login Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -354,23 +73,553 @@
                     <form>
                         <div class="form-group">
                             <label for="email">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            <input type="email" class="form-control shadow-none border-secondary" id="email"
+                                placeholder="Enter email">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group shadow-none">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" class="form-control shadow-none border-secondary" id="password"
+                                placeholder="Password">
                         </div>
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="rememberMe">
-                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                            <label class="form-check-label text-capitalize" for="rememberMe">Remember me</label>
                         </div>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <div class="modal-footer d-flex justify-content-between pb-0">
+                            <button type="submit" class="btn btn-dark shadow-none">Login</button>
+                            <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Cancel</button>
+
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!-- Side Social Media Icons -->
+    <div class="social-icons">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin-in"></a>
+        <a href="#" class="fab fa-twitter"></a>
+
+    </div>
+
+    <!-- Carousel -->
+    <header>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators ">
+                <li data-target="#carouselIndicators" data-slide-to="1" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="images/bg-img3.jpg" class="d-block w-100" alt="Greece">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Greece</h1>
+                        <p class="lead text-capitalize">The perfect destination for those seeking <br>peace and
+                            tranquility.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/place1.jpg" class="d-block w-100" alt="France">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Cathédrale Notre-Dame de Paris,France</h1>
+                        <p class="lead text-capitalize">explore the beauty and history of one of the world's most famous
+                            buildings.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/place2.jpg" class="d-block w-100" alt="Switzerland">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Swiss Alps, Switzerland</h1>
+                        <p class="lead text-capitalize">Engage in a variety of activities such as <br>skiing,
+                            snowboarding, and mountain biking</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Welcome Section -->
+    <section class="py-5" id="welcome">
+        <div class="container-fluid ">
+            <h2 class="text-uppercase text-center">Welcome</h2>
+            <p class="lead">Discover breathtaking destinations, plan your perfect getaway, and embark on unforgettable
+                adventures.
+                Whether you're seeking serene beaches, vibrant cities, or majestic mountains, Travello has everything
+                you need to make your travel dreams a reality.
+                Let's explore the world together!</p>
+            <a href="#welcome" class="btn btn-outline-dark">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section class="py-5" id="destination">
+        <div class="container-fluid">
+            <h2 class="pb-2 text-uppercase text-center">Popular Destinations</h2>
+            <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
+                        <span class="title text-uppercase">greece</span>
+                        <span class="icon"><i class="fas fa-angle-up rotate-icon"></i></span>
+                    </div>
+                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            A land of ancient history and stunning landscapes which invites you to explore
+                            its sun-drenched islands, historic ruins, and vibrant culture.
+                            Experience the warm hospitality, savor delicious Mediterranean cuisine,
+                            and immerse yourself in the timeless beauty of Greece.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        <span class="title text-uppercase">france</span>
+                        <span class="icon"><i class="fas fa-angle-up rotate-icon"></i></span>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            It's a country renowned for its rich history, exquisite cuisine, and breathtaking landscapes
+                            that offers a diverse
+                            array of experiences. Wander through the romantic streets of Paris,
+                            explore the historic châteaux of the Loire Valley, or relax on the sunny beaches of the
+                            French Riviera.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false">
+                        <span class="title text-uppercase">Switzerland</span>
+                        <span class="icon"><i class="fas fa-angle-up rotate-icon"></i></span>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Switzerland, the heart of Europe, is known for its stunning alpine scenery, pristine lakes,
+                            and charming towns. Home to the majestic Swiss Alps, this country offers endless
+                            opportunities for outdoor adventure, including skiing, hiking, and mountain biking.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Translation Section -->
+    <section class="py-5" id="translation">
+        <div class="container-fluid pb-2">
+            <h2 class="pb-3 text-center text-capitalize">Translation from Arabic to English</h2>
+            <div class="form-group">
+                <textarea class="form-control border-secondary shadow-none bg-light" id="translationTextarea" rows="6"
+                    placeholder="Enter text to translate"></textarea>
+            </div>
+            <button class="btn btn-outline-dark ml-2 mb-3" onclick="copyText()">Copy Text</button>
+        </div>
+
+        <div class="container-fluid">
+            <h2 class="pb-3 text-center text-capitalize">Translation from Arabic to French</h2>
+            <div class="form-group">
+                <textarea class="form-control border-secondary shadow-none bg-light" id="translationTextarea" rows="6"
+                    placeholder="Enter text to translate"></textarea>
+            </div>
+            <button class="btn btn-outline-dark ml-2  mb-3" onclick="copyText()">Copy Text</button>
+        </div>
+
+        <div class="container-fluid">
+            <h2 class="pb-3 text-center text-capitalize">Translation from Arabic to Greek</h2>
+            <div class="form-group">
+                <textarea class="form-control border-secondary shadow-none bg-light" id="translationTextarea" rows="6"
+                    placeholder="Enter text to translate"></textarea>
+            </div>
+            <button class="btn btn-outline-dark ml-2 mb-4" onclick="copyText()">Copy Text</button>
+        </div>
+    </section>
+
+    <!-- Background Image Section -->
+    <section class="fixed-bg mb-3"></section>
+
+    <!-- Trips Section -->
+    <section class="py-5" id="trips">
+        <div class="container-fluid">
+            <h2 class="pb-3 mb-3 text-center text-uppercase">our trips</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/PHUKET.jpg" class="card-img-top" alt="Thailand" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Phuket</h5>
+                            <p class="card-text">Phuket, Thailand's largest island, is the epicenter of summer beach
+                                fashion.
+                                Its golden sands and azure waters provide a runway for sun-seekers, who flaunt vibrant
+                                swimsuits, breezy sarongs, and chic sun hats.</p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/bali.jpg" class="card-img-top" alt="Indonesia" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali</h5>
+                            <p class="card-text">
+                                Bali, nestled within the vast Indonesian archipelago, is an idyllic retreat for those
+                                seeking tranquility and enchantment.
+                                Its landscapes, where verdant rice terraces merge with sun-drenched beaches, form a
+                                tapestry of natural beauty.</p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/australia.jpg" class="card-img-top" alt="Australia" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">The Great Barrier Reef</h5>
+                            <p class="card-text">
+                                The Great Barrier Reef, extending along Australia's northeast coast, is one of nature's
+                                most magnificent masterpieces.
+                                As the world's largest coral reef system, it features a kaleidoscope of marine life and
+                                vibrant coral formations.</p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/greece.jpg" class="card-img-top" alt="Greece" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Santorini</h5>
+                            <p class="card-text">Santorini, perched atop the Aegean Sea, is Greece's postcard-perfect
+                                gem.
+                                Its iconic white-washed buildings and blue-domed churches cling to steep cliffs,
+                                providing breathtaking views of sunsets over the caldera.</p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/india.jpg" class="card-img-top" alt="India" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Mauritius</h5>
+                            <p class="card-text">Mauritius, nestled in the heart of the Indian Ocean, stands as the
+                                quintessential island paradise.
+                                Its powdery white beaches blend seamlessly with cerulean waters, creating a haven for
+                                sun-worshippers and water enthusiasts alike.</p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/AMSTERDAM.jpg" class="card-img-top" alt="Netherlands" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Amesterdam</h5>
+                            <p class="card-text">Amsterdam, the jewel of the Netherlands, offers a captivating blend of
+                                old-world charm and modern vibrancy.
+                                Its winding canals, lined with historic houses, reflect centuries of heritage. By night,
+                                the city pulses with lively parties and the hum of conversation. </p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/bora bora.jpg" class="card-img-top" alt="French Polynesia" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Bora Bora</h5>
+                            <p class="card-text">Bora Bora, situated in French Polynesia, is a colossal cosmos of
+                                vibrant blue hues and lush greenery, encircled by a mystique lagoon and barrier reef.
+                                Renowned for its turquoise water and luxury overwater bungalows. It is a tropical
+                                paradise. </p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="images/scotland.jpg" class="card-img-top" alt="Scotland" height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Dugald Stewart Monument</h5>
+                            <p class="card-text">The Dugald Stewart Monument, perched on Calton Hill in Edinburgh,
+                                Scotland, is a striking tribute to the esteemed philosopher Dugald Stewart.
+                                This elegant monument offers visitors breathtaking panoramic views of the city and its
+                                historic skyline.
+                            </p>
+                            <a href="#trips" class="btn btn-dark">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Image Section -->
+    <section class="fixed-bg2 mb-3"></section>
+
+    <!-- Team Section -->
+    <section class="py-5" id="team">
+        <div class="container">
+            <h2 class="pb-3 mb-3 text-center text-uppercase">our team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <h4 class="thanks-text text-uppercase">special thanks</h4>
+                        <div class="background"></div>
+                        <div class="card-background" style="background-image: url('images/person1.jpg')"></div>
+
+                        <div class="card-content">
+
+                            <h5 class="card-title">Eng.Alice</h5>
+                            <span class="card-text">Web Developer</span>
+                        </div>
+                        <img src="images/person1.jpg" alt="Eng.Alice" class="small-image">
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <h4 class="thanks-text text-uppercase">special thanks</h4>
+                        <div class="background"></div>
+                        <div class="card-background" style="background-image: url('images/person2.jpg');">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">Eng.John</h5>
+                            <span class="card-text">Graphic Designer</span>
+                        </div>
+                        <img src="images/person2.jpg" alt="Eng.John" class="small-image">
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <h4 class="thanks-text text-uppercase">special thanks</h4>
+                        <div class="background"></div>
+                        <div class="card-background" style="background-image: url('images/person3.jpg');">
+                        </div>
+                        <div class="card-content">
+                            <h5 class="card-title">Eng.Mark</h5>
+                            <span class="card-text">Project Manager</span>
+                        </div>
+                        <img src="images/person3.jpg" alt="Eng.Mark" class="small-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent News Section -->
+    <section class="py-5" id="recent-news">
+        <div class="container my-5">
+            <h2 class="pb-3 mb-3 text-center text-uppercase">recent news</h2>
+            <!-- 1st Card -->
+            <div class="card shadow-lg mb-4">
+                <div class="row">
+                    <!-- Content Part -->
+                    <div class="col-md-8">
+                        <div class="news-card-content">
+                            <h2 class="news-card-title">Exploring the Hidden Gems of Tuscany:</h5>
+                                <div class="news-icon-text">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 1, 2024</span>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="news-card-text">
+                                    "Discover the untouched beauty of Tuscany's rolling hills and charming villages.
+                                    <br>From the picturesque vineyards to the historic architecture, Tuscany offers an
+                                    enchanting escape for those seeking a tranquil yet adventurous getaway..."
+                                </p>
+                        </div>
+                    </div>
+                    <!-- Image Part -->
+                    <div class="col-md-4">
+                        <img src="images/Tuscany.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-dark"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="btn btn-dark"><i class="far fa-clock"></i> Duration: 1h</button>
+                        <button class="btn btn-dark"><i class="fas fa-play"></i> Play</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 2nd Card -->
+            <div class="card shadow-lg mb-4">
+                <div class="row">
+                    <!-- Content Part -->
+                    <div class="col-md-8 ">
+                        <div class="news-card-content">
+                            <h2 class="news-card-title">The Rise of Eco-Friendly Travel:</h5>
+                                <div class="news-icon-text">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 1, 2024</span>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="news-card-text">
+                                    "As awareness of environmental issues grows, eco-friendly travel is on the rise.
+                                    Discover how you can reduce your carbon footprint while exploring new destinations.
+                                    Learn about sustainable practices and eco-conscious accommodations that make a
+                                    positive impact..."
+                                </p>
+                        </div>
+                    </div>
+                    <!-- Image Part -->
+                    <div class="col-md-4">
+                        <img src="images/eco.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-dark"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="btn btn-dark"><i class="far fa-clock"></i> Duration: 1h</button>
+                        <button class="btn btn-dark"><i class="fas fa-play"></i> Play</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd Card -->
+            <div class="card shadow-lg mb-4">
+                <div class="row">
+                    <!-- Content Part -->
+                    <div class="col-md-8 ">
+                        <div class="news-card-content">
+                            <h2 class="news-card-title">Unveiling the Mysteries of Ancient Egypt:</h5>
+                                <div class="news-icon-text">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 1, 2024</span>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="news-card-text">
+                                    "Step back in time and explore the wonders of Ancient Egypt.
+                                    From the enigmatic pyramids to the bustling bazaars of Cairo, discover the rich
+                                    history and culture that have fascinated travelers for centuries. Let your journey
+                                    through Egypt's past begin..."
+                                </p>
+                        </div>
+                    </div>
+                    <!-- Image Part -->
+                    <div class="col-md-4">
+                        <img src="images/egypt.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-dark"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="btn btn-dark"><i class="far fa-clock"></i> Duration: 1h</button>
+                        <button class="btn btn-dark"><i class="fas fa-play"></i> Play</button>
+                    </div>
+                </div>
+            </div>
+            <!-- 4th Card -->
+            <div class="card shadow-lg mb-4">
+                <div class="row">
+                    <!-- Content Part -->
+                    <div class="col-md-8 ">
+                        <div class="news-card-content">
+                            <h2 class="news-card-title">Adventures in the Amazon Rainforest:</h5>
+                                <div class="news-icon-text">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>July 1, 2024</span>
+                                    <div class="line"></div>
+                                </div>
+                                <p class="news-card-text">
+                                    "Immerse yourself in the Amazon Rainforest, a haven for biodiversity and adventure.
+                                    Navigate the winding rivers, encounter exotic wildlife,
+                                    and experience the vibrant ecosystem that makes this region a true natural wonder.
+                                    Prepare for an unforgettable expedition..."
+                                </p>
+                        </div>
+                    </div>
+                    <!-- Image Part -->
+                    <div class="col-md-4">
+                        <img src="images/amazon.jpg" class="card-img-top" alt="Image">
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn btn-dark"><i class="fas fa-podcast"></i> Podcast</button>
+                        <button class="btn btn-dark"><i class="far fa-clock"></i> Duration: 1h</button>
+                        <button class="btn btn-dark"><i class="fas fa-play"></i> Play</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="py-5 text-center bg-light" id="join-us">
+        <div class="container">
+            <h2 class="pb-3 mb-3 text-center text-uppercase">Join Us</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="#" target="_blank" class="fab fa-facebook-f fa-3x bg-dark text-white"></a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" target="_blank" class="fab fa-twitter fa-3x bg-dark text-white"></a>
+                </div>
+                <div class="col-md-3 ">
+                    <a href="#" target="_blank" class="fab fa-instagram fa-3x bg-dark text-white"></a>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <a href="#" target="_blank" class="fab fa-linkedin-in fa-3x bg-dark text-white"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <!-- Brief Description -->
+                <div class="col-lg-3 col-sm-6 pb-3">
+                    <h4 class="text-uppercase">travello</h4>
+                    <p>
+                        Travello is your gateway to unforgettable adventures around the world. Discover hidden gems,
+                        explore iconic destinations,
+                        and embark on journeys that will create lasting memories.
+
+                    </p>
+                </div>
+                <!-- Important Links  -->
+                <div class="col-lg-3 col-sm-6 pb-3">
+                    <h4 class="text-uppercase">Important Links</h4>
+                    <ul class="list-unstyled text-uppercase">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <!-- Help -->
+                <div class="col-lg-3 col-sm-6 pb-3">
+                    <h4 class="text-uppercase">Info help</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">RETURNS POLICIES</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-lg-3 col-sm-6 pb-3">
+                    <h4 class="text-uppercase">contact us</h4>
+                    <p>Do you have any queries or suggestions? yourinfo@gmail.com</p>
+                    <p>If you need support? Just give us a call (123) 456-7890</p>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="text-center mt-4">
+                <p class="mb-0 h5">&copy; 2024 Travello. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- Bootstrap JS and dependencies -->

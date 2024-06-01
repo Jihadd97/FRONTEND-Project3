@@ -18,12 +18,16 @@
     <!-- Navigation Bar -->
     <header>
         <nav class="navbar navbar-expand-sm navbar-light fixed-top"
-            style="height: 50px; background-color: rgba(255, 255, 255,0.5);">
+            style="height: 65px; background-color: rgba(255, 255, 255,0.5);">
             <div class="container-fluid">
+                <input type="image" src="images/loogo.jpg" class="rounded-pill mr-3" style="opacity: 0.7;" alt="logo"
+                    height="50px" width="50px">
                 <a class="navbar-brand text-uppercase" href="#">Travello</a>
-                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
                 <div class="navbar-collapse collapse" id="navbarContent">
                     <ul class="navbar-nav mr-auto ">
                         <li class="nav-item">
@@ -52,13 +56,16 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                     </ul>
-                    
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2 shadow-none" type="search" placeholder="Search">
-                        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
-                    
-                    <button class="btn btn-outline-dark ml-2 shadow-none" data-toggle="modal"
-                        data-target="#loginModal">Login</button>
+                    <form class="form-inline d-flex my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 border-secondary shadow-none" type="search"
+                            placeholder="Search">
+
+                    </form>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-dark my-2 custom-btn" type="submit">Search</button>
+
+                        <button class="btn btn-outline-dark ml-2 shadow-none custom-btn " data-toggle="modal"
+                            data-target="#loginModal">Login</button>
                     </form>
                 </div>
             </div>
@@ -66,7 +73,7 @@
     </header>
 
     <!-- Login Modal -->
-    
+
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -92,9 +99,9 @@
                             <input type="checkbox" class="form-check-input" id="rememberMe">
                             <label class="form-check-label text-capitalize" for="rememberMe">Remember me</label>
                         </div>
-                        <div class="modal-footer d-flex justify-content-between pb-0">
+                        <div class="modal-footer d-flex justify-content-between">
                             <button type="submit" class="btn btn-dark shadow-none">Login</button>
-                            <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-dark shadow-none " data-dismiss="modal">Cancel</button>
 
                         </div>
                     </form>
@@ -122,7 +129,7 @@
                 <li data-target="#carouselIndicators" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" >
+                <div class="carousel-item active">
                     <img src="images/bg-img3.jpg" class="d-block w-100" alt="Greece">
                     <div class="carousel-caption">
                         <h1>Greece</h1>
@@ -140,7 +147,7 @@
                 </div>
                 <div class="carousel-item">
                     <img src="images/place2.jpg" class="d-block w-100" alt="Switzerland">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h1>Swiss Alps, Switzerland</h1>
                         <p class="lead text-capitalize">Engage in a variety of activities such as <br>skiing,
                             snowboarding, and mountain biking</p>
@@ -386,7 +393,7 @@
                         <div class="background"></div>
                         <div class="card-background" style="background-image: url('images/person1.jpg')"></div>
 
-                        <div class="card-content ">
+                        <div class="card-content d-flex flex-column ml-4 ">
 
                             <h5 class="card-title">Eng.Alice</h5>
                             <span class="card-text">Web Developer</span>
@@ -401,7 +408,7 @@
                         <div class="background"></div>
                         <div class="card-background" style="background-image: url('images/person2.jpg');">
                         </div>
-                        <div class="card-content d-flex">
+                        <div class="card-content d-flex flex-column ml-4">
                             <h5 class="card-title">Eng.John</h5>
                             <span class="card-text">Graphic Designer</span>
                         </div>
@@ -415,7 +422,7 @@
                         <div class="background"></div>
                         <div class="card-background" style="background-image: url('images/person3.jpg');">
                         </div>
-                        <div class="card-content">
+                        <div class="card-content d-flex flex-column ml-4">
                             <h5 class="card-title">Eng.Mark</h5>
                             <span class="card-text">Project Manager</span>
                         </div>
@@ -432,28 +439,28 @@
             <h2 class="pb-3 mb-3 text-center text-uppercase">recent news</h2>
             <!-- 1st Card -->
             <div class="card shadow-lg mb-4">
-                <div class="row">
+                <div class="row no-gutters">
                     <!-- Content Part -->
-                    <div class="col-md-8">
-                        <div class="news-card-content">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="news-card-content p-3">
                             <h2 class="news-card-title">Exploring the Hidden Gems of Tuscany:</h5>
                                 <div class="news-icon-text">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span>July 1, 2024</span>
                                     <div class="line"></div>
                                 </div>
-                                <p class="news-card-text">
-                                    "Discover the untouched beauty of Tuscany's rolling hills and charming villages.
+                                <p class="news-card-text text-justify">
+                                    Discover the untouched beauty of Tuscany's rolling hills and charming villages.
                                     <br>From the picturesque vineyards to the historic architecture, Tuscany offers an
-                                    enchanting escape for those seeking a tranquil yet adventurous getaway..."
+                                    enchanting escape for those seeking a tranquil yet adventurous getaway...
                                 </p>
                         </div>
                     </div>
                     <!-- Image Part -->
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <img src="images/Tuscany.jpg" class="card-img-top" alt="Image">
                     </div>
-                    <div class="btn-container">
+                    <div class="btn-container p-3">
                         <button class="btn btn-dark"><i class="fas fa-podcast"></i> Podcast</button>
                         <button class="btn btn-dark"><i class="far fa-clock"></i> Duration: 1h</button>
                         <button class="btn btn-dark"><i class="fas fa-play"></i> Play</button>
@@ -463,26 +470,26 @@
             </div>
             <!-- 2nd Card -->
             <div class="card shadow-lg mb-4">
-                <div class="row">
+                <div class="row no-gutters">
                     <!-- Content Part -->
-                    <div class="col-md-8 ">
-                        <div class="news-card-content">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="news-card-content p-3">
                             <h2 class="news-card-title">The Rise of Eco-Friendly Travel:</h5>
                                 <div class="news-icon-text">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span>July 1, 2024</span>
                                     <div class="line"></div>
                                 </div>
-                                <p class="news-card-text">
-                                    "As awareness of environmental issues grows, eco-friendly travel is on the rise.
+                                <p class="news-card-text text-justify">
+                                    As awareness of environmental issues grows, eco-friendly travel is on the rise.
                                     Discover how you can reduce your carbon footprint while exploring new destinations.
                                     Learn about sustainable practices and eco-conscious accommodations that make a
-                                    positive impact..."
+                                    positive impact...
                                 </p>
                         </div>
                     </div>
                     <!-- Image Part -->
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <img src="images/eco.jpg" class="card-img-top" alt="Image">
                     </div>
                     <div class="btn-container">
@@ -494,26 +501,26 @@
             </div>
             <!-- 3rd Card -->
             <div class="card shadow-lg mb-4">
-                <div class="row">
+                <div class="row no-gutters">
                     <!-- Content Part -->
-                    <div class="col-md-8 ">
-                        <div class="news-card-content">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="news-card-content p-3">
                             <h2 class="news-card-title">Unveiling the Mysteries of Ancient Egypt:</h5>
                                 <div class="news-icon-text">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span>July 1, 2024</span>
                                     <div class="line"></div>
                                 </div>
-                                <p class="news-card-text">
-                                    "Step back in time and explore the wonders of Ancient Egypt.
+                                <p class="news-card-text text-justify">
+                                    Step back in time and explore the wonders of Ancient Egypt.
                                     From the enigmatic pyramids to the bustling bazaars of Cairo, discover the rich
                                     history and culture that have fascinated travelers for centuries. Let your journey
-                                    through Egypt's past begin..."
+                                    through Egypt's past begin...
                                 </p>
                         </div>
                     </div>
                     <!-- Image Part -->
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <img src="images/egypt.jpg" class="card-img-top" alt="Image">
                     </div>
                     <div class="btn-container">
@@ -525,26 +532,26 @@
             </div>
             <!-- 4th Card -->
             <div class="card shadow-lg mb-4">
-                <div class="row">
+                <div class="row no-gutters">
                     <!-- Content Part -->
-                    <div class="col-md-8 ">
-                        <div class="news-card-content">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="news-card-content p-3">
                             <h2 class="news-card-title">Adventures in the Amazon Rainforest:</h5>
                                 <div class="news-icon-text">
                                     <i class="fas fa-calendar-alt"></i>
                                     <span>July 1, 2024</span>
                                     <div class="line"></div>
                                 </div>
-                                <p class="news-card-text">
-                                    "Immerse yourself in the Amazon Rainforest, a haven for biodiversity and adventure.
+                                <p class="news-card-text text-justify">
+                                    Immerse yourself in the Amazon Rainforest, a haven for biodiversity and adventure.
                                     Navigate the winding rivers, encounter exotic wildlife,
                                     and experience the vibrant ecosystem that makes this region a true natural wonder.
-                                    Prepare for an unforgettable expedition..."
+                                    Prepare for an unforgettable expedition...
                                 </p>
                         </div>
                     </div>
                     <!-- Image Part -->
-                    <div class="col-md-4">
+                    <div class="col-sm-12 col-md-4">
                         <img src="images/amazon.jpg" class="card-img-top" alt="Image">
                     </div>
                     <div class="btn-container">

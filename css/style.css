@@ -19,7 +19,7 @@ a,
 }
 
 .navbar-nav .nav-item {
-  margin-right: 1rem;
+  margin-right: 2px;
   font-size: larger;
 }
 
@@ -28,12 +28,42 @@ a,
 }
 
 .dropdown-menu {
-  margin-top: 5px;
+  margin-top: 10px;
   background-color: #333;
 }
 
 .dropdown-menu a {
   color: white;
+}
+
+.custom-btn {
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem 0.25rem;
+}
+
+.navbar .form-inline .form-control {
+  width: 200px;
+}
+
+.navbar .form-inline .btn {
+  margin-left: 5px;
+}
+
+@media (max-width: 576px) {
+  .navbar .form-inline {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar .form-inline .form-control {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .navbar .form-inline .btn {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 /* SOCIAL MEDIA */
@@ -96,7 +126,6 @@ header {
     color: #000;
   }
 
-
   .card-header {
     cursor: pointer;
     border-bottom: none;
@@ -109,7 +138,6 @@ header {
   .card-body {
     border-top: 1px solid #ddd;
   }
-
 
   .card-header:is(.collapsed) .rotate-icon {
 
@@ -202,10 +230,7 @@ header {
   }
 }
 
-
 /* TEAM */
-
-
 
 #team .card {
   position: relative;
@@ -280,6 +305,7 @@ header {
   .card {
     background-color: #bdbdbd;
     transition: 1s;
+
   }
 
   .card-img-top {
@@ -291,25 +317,17 @@ header {
     cursor: pointer;
     border-radius: 2%;
 
-
-  }
-
-  .news-card-content {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 2rem;
-    cursor: pointer;
-
   }
 
   .news-icon-text {
     margin-bottom: 10px;
-    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
   }
 
   .fas {
-    margin-right: 5px;
+    margin-right: 8px;
   }
 
   .news-card-text {
@@ -320,7 +338,8 @@ header {
   .line {
     width: 50px;
     height: 5px;
-    margin: 10px 0;
+    margin-top: 3rem;
+    margin-left: -7rem;
     border-radius: 5px;
     background-color: #424242;
     transition: width 0.5s ease;
@@ -332,6 +351,20 @@ header {
     position: absolute;
     bottom: 5rem;
     left: 2rem;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+
+  @media (max-width: 576px) {
+    .news-card-content {
+      padding: 15px;
+
+    }
+
+    .btn-container {
+      display: none;
+    }
+
   }
 }
 
@@ -345,10 +378,11 @@ header {
   .news-card-title {
     color: #ece8e8;
     transition: 0.5s;
+
   }
 
   .line {
-    width: 10rem;
+    width: 9rem;
     transition: 1s;
   }
 }

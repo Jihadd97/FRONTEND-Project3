@@ -49,23 +49,6 @@ a,
   margin-left: 5px;
 }
 
-@media (max-width: 576px) {
-  .navbar .form-inline {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .navbar .form-inline .form-control {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  .navbar .form-inline .btn {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 /* SOCIAL MEDIA */
 
 .social-icons {
